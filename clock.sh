@@ -131,7 +131,7 @@ function check_win {
 function INIT {
     tput smcup; #Save screen contents
     check_win `tput lines` `tput cols`;
-    trap 'EXIT;' SIGINT; #将光标重新设置为白色
+    trap 'EXIT;' SIGINT;
     tput civis; #Set to cursor to be invisible
     old_value;
 }
